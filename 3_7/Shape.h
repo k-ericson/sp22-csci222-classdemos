@@ -14,14 +14,16 @@
 class Shape {
  private:
   std::string color;
-  std::string name;
 
+ protected:
+  std::string name;
+  
  public:
   Shape();
   Shape(std::string color, std::string name);
-  double Area();
-  double Perimeter();
-  void Print();
+  virtual double Area();
+  virtual double Perimeter();
+  virtual void Print();
 };
 
 #endif //SHAPE_H

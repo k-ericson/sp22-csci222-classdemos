@@ -8,6 +8,11 @@ class Rectangle : public Shape {
   double length;
   double width;
  public:
+  Rectangle();
+  Rectangle(double length, double width, std::string color, std::string name);
+  double Area();
+  double Perimeter();
+  void Print();
 };
 
 #endif //RECTANGLE_H
